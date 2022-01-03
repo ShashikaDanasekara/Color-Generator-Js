@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Amaranth', sans-serif;
+    background: linear-gradient(to bottom, #c5c5c5b7 100%,#DEDBD2 0%);
+}
+.container .header{
+    text-align: center;
+    min-width: 400px;
+    margin: 20px auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #a7a7a7;
+    cursor:default;
+    transition: all 2s;
+}
+.container .header:hover{
+    letter-spacing: 4px;
+}
+.palette{
+    display:flex;
+    justify-content:center;
+    padding: 10px 0;
+}
+.color{
+    margin: 0.2%;
+    width: 19%;
+    height:500px;
+    text-align: center;
+    transition: all 1s;
+}
+.color:hover{
+    width: 22%; 
+}
+.color span{
+    display:inline-block;
+    margin: 470px auto;
+    background: rgba(255, 255, 255, 0.164);
+    padding: 5px;
+    width: 100%;
+}
+.container .controls{
+    margin: 10px auto;
+    text-align: center;
+}
+.btn{
+    padding:10px 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.089);
+}
+.btn-generate{
+    font-weight: bold;
+    color: black;
+    background: whitesmoke;
+    animation: wave 1s linear infinite;
+    transition: all 1s;  
+}
+.btn-generate:hover{
+    letter-spacing: 1px;
+}
+@keyframes wave{
+    0%{
+        box-shadow: 0px 0px 0px 2px rgb(42, 42, 42,0.4);
+    }
+    60%{
+        box-shadow: 0px 0px 0px 7px rgba(42, 42, 42, 0.3);
+    }
+    100%{
+        box-shadow: 0px 0px 0px 2px rgb(37, 37, 37);
+    }
+}
+
